@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="beginPageVM" type="com.blanksapplication.app.modules.beginpage.data.viewmodel.BeginPageVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameBEGINPAGE"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageRectangleTwo"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_rectangle2}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle2"/>
+        <ImageView android:id="@+id/imageLOGO"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_391pxh"
+            android:layout_marginBottom="@dimen/_40pxv"
+            android:layout_marginEnd="@dimen/_38pxh"
+            android:layout_marginStart="@dimen/_37pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="@dimen/_355pxh"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_logo}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_logo"/>
+    </FrameLayout>
+</layout>

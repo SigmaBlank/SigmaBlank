@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="popupboxOneVM" type="com.blanksapplication.app.modules.popupboxone.data.viewmodel.PopupboxOneVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearPOPUPBOXOne"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_1">
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtConfirmation"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_34pxh"
+            android:layout_marginStart="@dimen/_34pxh"
+            android:layout_marginTop="@dimen/_53pxv"
+            android:layout_width="match_parent"
+            android:text="@{popupboxOneVM.popupboxOneModel.txtConfirmation}"
+            style="@style/txtIstokWebbold32" tools:text="@string/msg_are_you_sure_de"/>
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearRowcancel"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_21pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_27pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnCancel"
+                android:layout_height="@dimen/_37pxv"
+                android:layout_width="@dimen/_122pxh"
+                android:paddingBottom="@dimen/_6pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_6pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_cancel"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_6" tools:text="@string/lbl_cancel"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnYes"
+                android:layout_height="@dimen/_37pxv"
+                android:layout_marginStart="@dimen/_71pxh"
+                android:layout_width="@dimen/_122pxh"
+                android:paddingBottom="@dimen/_6pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_6pxv"
+                android:singleLine="true" android:text="@string/lbl_yes"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_6" tools:text="@string/lbl_yes"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

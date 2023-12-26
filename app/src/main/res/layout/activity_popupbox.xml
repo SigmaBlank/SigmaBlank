@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="popupboxVM" type="com.blanksapplication.app.modules.popupbox.data.viewmodel.PopupboxVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearPOPUPBOX"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_1">
+        <TextView android:ellipsize="end" android:id="@+id/txtThankYou"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{popupboxVM.popupboxModel.txtThankYou}"
+            style="@style/txtIstokWebbold32" tools:text="@string/lbl_thank_you"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtDescription"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="match_parent"
+            android:text="@{popupboxVM.popupboxModel.txtDescription}"
+            style="@style/txtIstokWebbold15" tools:text="@string/msg_thank_you_for_t"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnClose" android:layout_gravity="end"
+            android:layout_height="@dimen/_37pxv"
+            android:layout_marginBottom="@dimen/_21pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_29pxv"
+            android:layout_width="@dimen/_122pxh"
+            android:paddingBottom="@dimen/_6pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_6pxv" android:singleLine="true"
+            android:text="@string/lbl_close" android:textAllCaps="false"
+            style="@style/btnSolidRounded_6" tools:text="@string/lbl_close"/>
+    </LinearLayout>
+</layout>

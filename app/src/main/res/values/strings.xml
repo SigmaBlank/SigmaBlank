@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">blank_s_application</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_code">Code</string>
+  <string name="lbl_continue">Continue</string>
+  <string name="msg_please_enter_yo2">Please enter your </string>
+  <string name="msg_thank_you_for_c2">Thank you for choosing </string>
+  <string name="lbl_password_reset">Password Reset</string>
+  <string name="lbl_logout">Logout</string>
+  <string name="msg_confirm_passwor">Confirm Password</string>
+  <string name="lbl_table_reserve">Table Reserve</string>
+  <string name="lbl_1000_1100">1000-1100</string>
+  <string name="msg_tell_us_about_y">Tell us about your experience</string>
+  <string name="lbl2">! </string>
+  <string name="lbl_reset_password">Reset Password</string>
+  <string name="msg_tail_has_been_s"> Tail has been successfully canceled.</string>
+  <string name="msg_time_select_on">Time (select one)</string>
+  <string name="lbl_23_10_2023">23-10-2023</string>
+  <string name="lbl_2000_2100">2000-2100</string>
+  <string name="lbl_new_password">New Password</string>
+  <string name="lbl_lunch">Lunch</string>
+  <string name="lbl_phone_number">Phone Number</string>
+  <string name="lbl_password2">Password</string>
+  <string name="msg_enter_your_new">Enter your new password</string>
+  <string name="lbl_4_left">4 left</string>
+  <string name="msg_back_to_home_pa">Back to Home Page</string>
+  <string name="lbl_edit">Edit</string>
+  <string name="lbl_6_seat">6 Seat</string>
+  <string name="lbl_dinner">Dinner</string>
+  <string name="lbl_table_size">Table Size</string>
+  <string name="lbl_0700_0800">0700-0800</string>
+  <string name="lbl_notifications">Notifications</string>
+  <string name="lbl_left">left</string>
+  <string name="lbl_10_hours_ago">10 HOURS AGO</string>
+  <string name="lbl_3_left">3 left</string>
+  <string name="msg_forgot_password">Forgot Password?</string>
+  <string name="lbl_garden">GARDEN</string>
+  <string name="lbl_cancel">Cancel</string>
+  <string name="lbl_username">USERNAME</string>
+  <string name="lbl_size">Size:</string>
+  <string name="msg_your_reservatio2">Your reservation at Whale Tail has been successfully canceled.</string>
+  <string name="msg_your_reservatio3">Your reservation at </string>
+  <string name="lbl_edit_profile">Edit Profile</string>
+  <string name="msg_your_reservatio4">Your reservation is confirmed.
+You can view your reservation 
+detail on Home page.</string>
+  <string name="lbl_overall">OVERALL</string>
+  <string name="lbl_date">Date</string>
+  <string name="lbl_old_password">Old Password</string>
+  <string name="lbl_back_to_login">Back To Login</string>
+  <string name="lbl_history">History</string>
+  <string name="lbl_peoples">peoples</string>
+  <string name="msg_welcome_to_whal">Welcome to Whale Tail</string>
+  <string name="lbl_delete">Delete</string>
+  <string name="msg_delete_my_accou">Delete My Account</string>
+  <string name="msg_please_enter_yo">Please enter your 6-digit code. Create and confirm your new password.</string>
+  <string name="msg_no_worries_we">No worries, we\u2019\u2019ll send you reset instructions.</string>
+  <string name="lbl_6_digit_code">6-digit code</string>
+  <string name="lbl_reserve_now">Reserve Now!
+</string>
+  <string name="msg_create_and_co">. Create and confirm your new password.</string>
+  <string name="lbl_indoor2">Indoor</string>
+  <string name="msg_thank_for_your">Thank for your review of Whale Tail ! </string>
+  <string name="lbl_password">PASSWORD</string>
+  <string name="lbl_whale">Whale</string>
+  <string name="lbl_yesterday">YESTERDAY</string>
+  <string name="lbl_321532">321532</string>
+  <string name="msg_renter_your_new">Renter your new password</string>
+  <string name="msg_thank_you_for_c">Thank you for choosing Whale Tail for your dining experience. Your reservation has been confirmed!</string>
+  <string name="lbl_1800_1900">1800-1900</string>
+  <string name="msg_give_us_some_fe">give us some feedback...</string>
+  <string name="lbl_meal">Meal</string>
+  <string name="lbl_1400_1500">1400-1500</string>
+  <string name="lbl_whale_tail">Whale Tail </string>
+  <string name="lbl_meal2">Meal </string>
+  <string name="lbl_whale_tail2">Whale Tail</string>
+  <string name="lbl_user01">User01</string>
+  <string name="lbl_breakfast">Breakfast</string>
+  <string name="lbl_account">Account</string>
+  <string name="lbl_thank_you">Thank You!</string>
+  <string name="msg_thank_you_for_t">Thank you for taking the time to provide us with your valuable feedback. Your feedback is important to us, and we will review it carefully to better understand your concerns.</string>
+  <string name="lbl_date2">Date:</string>
+  <string name="msg_are_you_sure_wa">Are you sure want to delete your account? This permanently erase all your data.
+
+If you would still like to delete your account, please submit your request below:</string>
+  <string name="lbl_1200_1300">1200-1300</string>
+  <string name="lbl_1900_2000">1900-2000</string>
+  <string name="lbl_22">2 </string>
+  <string name="lbl_012345678">012345678</string>
+  <string name="lbl_confirm">Confirm</string>
+  <string name="lbl_sit_location">Sit Location</string>
+  <string name="msg_confirm_new_pas">Confirm New Password</string>
+  <string name="lbl_create_account">Create Account</string>
+  <string name="lbl_change_password">Change Password</string>
+  <string name="msg_your_reservatio">Your reservation request is being processed. Please wait while we confirm your reservation.</string>
+  <string name="msg_welcome_back_u">Welcome Back! User01</string>
+  <string name="lbl_yes">Yes</string>
+  <string name="msg_enter_your_old">Enter your old password</string>
+  <string name="lbl_0600_0700">0600-0700</string>
+  <string name="lbl_sign_up">Sign Up</string>
+  <string name="lbl_0900_1000">0900-1000</string>
+  <string name="lbl_garden2">Garden</string>
+  <string name="lbl">**********</string>
+  <string name="msg_location_gard2">Location : Garden           Meal: Breakfast
+Size: 2 seat
+Date: 12-10-2023
+Time: 0900-1000</string>
+  <string name="lbl_submit">Submit</string>
+  <string name="lbl_save">Save</string>
+  <string name="lbl_5_minutes_ago">5 MINUTES AGO</string>
+  <string name="lbl_done">DONE</string>
+  <string name="msg_are_you_sure_de">Are you sure delete your reservation?</string>
+  <string name="lbl_2_left">2 left</string>
+  <string name="lbl_email">Email</string>
+  <string name="msg_check_your_emai">Check Your Email</string>
+  <string name="lbl_2_seat">2 Seat</string>
+  <string name="lbl_seaside">SEASIDE</string>
+  <string name="lbl_1">1</string>
+  <string name="lbl_1300_1400">1300-1400</string>
+  <string name="lbl_confirmation">Confirmation</string>
+  <string name="msg_someone_example">someone@example.com</string>
+  <string name="lbl_3">3 </string>
+  <string name="msg_location_gard">Location : Garden           Meal: Breakfast
+Size: 2 seat
+Date: 23-10-2023
+Time: 0900-1000</string>
+  <string name="lbl_4">4 </string>
+  <string name="lbl_1100_1200">1100-1200</string>
+  <string name="lbl_seaside2">Seaside</string>
+  <string name="lbl_login">LOGIN</string>
+  <string name="lbl_0800_0900">0800-0900</string>
+  <string name="msg_please_select_s">Please select sit location</string>
+  <string name="msg_thank_for_your2">Thank for your review of </string>
+  <string name="lbl_close">Close</string>
+  <string name="msg_your_password_h">Your password has been successfully reset.Please click below back to login page.</string>
+  <string name="lbl_username2">Username</string>
+  <string name="lbl_forgot_password">Forgot Password</string>
+  <string name="lbl_recent">RECENT</string>
+  <string name="msg_for_your_dining"> for your dining experience. Your reservation has been confirmed!</string>
+  <string name="msg_previous_reserv">Previous Reservation</string>
+  <string name="lbl_10_seat">10 Seat</string>
+  <string name="lbl_review">Review</string>
+  <string name="lbl_delete_account">Delete Account</string>
+  <string name="msg_reserve_now_pl">Reserve Now!
+Please select sit location</string>
+  <string name="msg_recent_reservat">Recent Reservation</string>
+  <string name="lbl_indoor">INDOOR</string>
+  <string name="msg_display_notific">Display notifications</string>
+  <string name="lbl_full_name">Full Name</string>
+</resources>

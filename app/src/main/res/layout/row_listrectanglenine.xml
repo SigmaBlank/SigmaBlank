@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectanglenineRowModel" type="com.blanksapplication.app.modules.notification.data.model.ListrectanglenineRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearNotificationMe"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_A700_20">
+        <ImageView android:id="@+id/imageRectangleNine"
+            android:layout_height="@dimen/_63pxh"
+            android:layout_marginBottom="@dimen/_43pxv"
+            android:layout_marginStart="@dimen/_3pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="@dimen/_62pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_rectangle9}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle9"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnlanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_7pxv"
+            android:layout_marginEnd="@dimen/_32pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_weight="0.8" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listrectanglenineRowModel.txtLanguage}"
+                style="@style/txtInriaSansregular16" tools:text="@string/msg_thank_for_your"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDuration"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_marginTop="@dimen/_57pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listrectanglenineRowModel.txtDuration}"
+                style="@style/txtInriaSansbold16_1" tools:text="@string/lbl_5_minutes_ago"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginPageVM" type="com.blanksapplication.app.modules.loginpage.data.viewmodel.LoginPageVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnlogo"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_55pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+
+        <ScrollView
+            android:id="@+id/scrollViewScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="1326dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:gravity="start">
+
+            <LinearLayout
+                android:id="@+id/linearLOGINPAGE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/frameStacklogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="942dp"
+                    android:gravity="start">
+
+                    <ImageView
+                        android:id="@+id/imageLOGO"
+                        imageRes="@{@drawable/img_logo_236x277}"
+                        android:layout_width="@dimen/_277pxh"
+                        android:layout_height="@dimen/_236pxh"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginStart="@dimen/_61pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_61pxh"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_logo_236x277" />
+
+                    <ImageView
+                        android:id="@+id/imageHowtoGrillSa"
+                        imageRes="@{@drawable/img_howtogrillsa}"
+                        android:layout_width="match_parent"
+                        android:layout_height="515dp"
+                        android:layout_gravity="top|start"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_howtogrillsa" />
+
+                    <TextView
+                        android:id="@+id/txtWelcometoWhal"
+                        style="@style/txtIstokWebregular26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginStart="@dimen/_78pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_78pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:singleLine="true"
+                        android:text="@{loginPageVM.loginPageModel.txtWelcometoWhal}"
+                        tools:text="@string/msg_welcome_to_whal" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    style="@style/txtIstokWebbold20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_48pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_marginEnd="@dimen/_48pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{loginPageVM.loginPageModel.txtPrice}"
+                    tools:text="@string/lbl_username" />
+
+                <FrameLayout
+                    android:id="@+id/frameStackvector"
+                    android:layout_width="@dimen/_364pxh"
+                    android:layout_height="131dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/_31pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_marginEnd="@dimen/_31pxh">
+
+                    <ImageView
+                        android:id="@+id/imageVector"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70pxh"
+                        android:layout_gravity="start"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_vector_blue_100"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_vector_blue_100" />
+
+                    <EditText
+                        android:id="@+id/editTextText"
+                        android:layout_width="584dp"
+                        android:layout_height="108dp"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:text="UserName" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/txtPASSWORD"
+                    style="@style/txtIstokWebbold20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_48pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_marginEnd="@dimen/_48pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{loginPageVM.loginPageModel.txtPASSWORD}"
+                    tools:text="@string/lbl_password" />
+
+                <FrameLayout
+                    android:id="@+id/frameStackpasswordOne"
+                    android:layout_width="@dimen/_364pxh"
+                    android:layout_height="126dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/_31pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_marginEnd="@dimen/_31pxh">
+
+                    <ImageView
+                        android:id="@+id/imagePASSWORDOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70pxh"
+                        android:layout_gravity="start"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_vector_blue_100"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_vector_blue_100" />
+
+                    <EditText
+                        android:id="@+id/editTextTextPassword"
+                        android:layout_width="438dp"
+                        android:layout_height="79dp"
+                        android:ems="10"
+                        android:inputType="textPassword" />
+
+                </FrameLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLogin"
+                    style="@style/btnSolidRounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_31pxh"
+                    android:layout_marginTop="@dimen/_35pxv"
+                    android:layout_marginEnd="@dimen/_31pxh"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_9pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingBottom="@dimen/_9pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_login"
+                    android:textAllCaps="false"
+                    tools:text="@string/lbl_login" />
+
+                <TextView
+                    android:id="@+id/txtForgotPassword"
+                    style="@style/txtIstokWebregular16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_31pxh"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_marginEnd="@dimen/_31pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{loginPageVM.loginPageModel.txtForgotPassword}"
+                    tools:text="@string/msg_forgot_password" />
+
+                <TextView
+                    android:id="@+id/txtCreateAccount"
+                    style="@style/txtIstokWebregular16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_31pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_marginEnd="@dimen/_31pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{loginPageVM.loginPageModel.txtCreateAccount}"
+                    tools:text="@string/lbl_create_account" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

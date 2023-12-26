@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileVM" type="com.blanksapplication.app.modules.profile.data.viewmodel.ProfileVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnaccount"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearPROFILE"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnAccount"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_21pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_21pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_account"
+                    android:textAllCaps="false"
+                    style="@style/btnSolid_1" tools:text="@string/lbl_account"/>
+                <FrameLayout android:id="@+id/frameStackframefive"
+                    android:layout_height="@dimen/_796pxv"
+                    android:layout_marginTop="@dimen/_36pxv" android:layout_width="match_parent">
+                    <ImageView android:id="@+id/imageFrameFive"
+                        android:layout_gravity="start"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_frame5"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_frame5"/>
+                    <LinearLayout android:id="@+id/linearColumnuserone"
+                        android:layout_gravity="top|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_36pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_7pxh"
+                        android:layout_marginTop="@dimen/_36pxv"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtUserOne"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_151pxh"
+                            android:layout_marginStart="@dimen/_151pxh"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{profileVM.profileModel.txtUserOne}"
+                            style="@style/txtIstokWebbold24_2" tools:text="@string/lbl_user01"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="end"
+                            android:id="@+id/txtEmail"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_28pxh"
+                            android:layout_marginStart="@dimen/_28pxh"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{profileVM.profileModel.txtEmail}"
+                            style="@style/txtIstokWebbold20" tools:text="@string/msg_someone_example"/>
+                        <FrameLayout android:id="@+id/frameEditProfile"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_82pxv"
+                            android:layout_marginTop="@dimen/_51pxv" android:layout_width="@dimen/_410pxh">
+                            <ImageView android:id="@+id/imageArrowright"
+                                android:layout_gravity="bottom|end"
+                                android:layout_height="@dimen/_29pxh"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_marginEnd="@dimen/_23pxh"
+                                android:layout_marginStart="@dimen/_23pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="@dimen/_20pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_arrowright"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+                            <TextView android:ellipsize="end"
+                                android:gravity="bottom|start"
+                                android:id="@+id/txtGroupFour"
+                                android:layout_gravity="start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_5pxv"
+                                android:paddingTop="@dimen/_30pxv"
+                                android:singleLine="true"
+                                android:text="@{profileVM.profileModel.txtGroupFour}"
+                                style="@style/txtOutline" tools:text="@string/lbl_edit_profile"/>
+                        </FrameLayout>
+                        <FrameLayout android:id="@+id/frameEditProfile1"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_82pxv" android:layout_width="@dimen/_410pxh">
+                            <ImageView
+                                android:id="@+id/imageArrowrightOne"
+                                android:layout_gravity="bottom|end"
+                                android:layout_height="@dimen/_29pxh"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_marginEnd="@dimen/_23pxh"
+                                android:layout_marginStart="@dimen/_23pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="@dimen/_20pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_arrowright"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+                            <TextView android:ellipsize="end"
+                                android:gravity="bottom|start"
+                                android:id="@+id/txtGroupSeven"
+                                android:layout_gravity="start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_5pxv"
+                                android:paddingTop="@dimen/_30pxv"
+                                android:singleLine="true"
+                                android:text="@{profileVM.profileModel.txtGroupSeven}"
+                                style="@style/txtOutline" tools:text="@string/lbl_review"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:id="@+id/frameChangePassword"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_79pxv" android:layout_width="@dimen/_410pxh">
+                            <ImageView
+                                android:id="@+id/imageArrowrightTwo"
+                                android:layout_gravity="bottom|end"
+                                android:layout_height="@dimen/_29pxh"
+                                android:layout_marginBottom="@dimen/_8pxv"
+                                android:layout_marginEnd="@dimen/_19pxh"
+                                android:layout_marginStart="@dimen/_19pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="@dimen/_20pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_arrowright"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+                            <TextView android:ellipsize="end"
+                                android:gravity="top|start"
+                                android:id="@+id/txtGroupThree"
+                                android:layout_gravity="start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_4pxv"
+                                android:paddingStart="@dimen/_4pxh"
+                                android:paddingTop="@dimen/_30pxv"
+                                android:singleLine="true"
+                                android:text="@{profileVM.profileModel.txtGroupThree}"
+                                style="@style/txtOutline" tools:text="@string/lbl_change_password"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:id="@+id/frameNotifications"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_79pxv"
+                            android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_410pxh">
+                            <ImageView
+                                android:id="@+id/imageArrowrightThree"
+                                android:layout_gravity="bottom|end"
+                                android:layout_height="@dimen/_29pxh"
+                                android:layout_marginBottom="@dimen/_8pxv"
+                                android:layout_marginEnd="@dimen/_19pxh"
+                                android:layout_marginStart="@dimen/_19pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="@dimen/_20pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_arrowright"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+                            <TextView android:ellipsize="end"
+                                android:gravity="top|start"
+                                android:id="@+id/txtGroupFive"
+                                android:layout_gravity="start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_6pxv"
+                                android:paddingStart="@dimen/_4pxh"
+                                android:paddingTop="@dimen/_30pxv"
+                                android:singleLine="true"
+                                android:text="@{profileVM.profileModel.txtGroupFive}"
+                                style="@style/txtOutline" tools:text="@string/lbl_notifications"/>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:id="@+id/frameDeleteAccount"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_79pxv"
+                            android:layout_marginTop="@dimen/_2pxv" android:layout_width="@dimen/_410pxh">
+                            <ImageView
+                                android:id="@+id/imageArrowrightFour"
+                                android:layout_gravity="bottom|end"
+                                android:layout_height="@dimen/_29pxh"
+                                android:layout_marginBottom="@dimen/_8pxv"
+                                android:layout_marginEnd="@dimen/_19pxh"
+                                android:layout_marginStart="@dimen/_19pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="@dimen/_20pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_arrowright"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+                            <TextView android:ellipsize="end"
+                                android:gravity="top|start"
+                                android:id="@+id/txtGroupSix"
+                                android:layout_gravity="start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_4pxv"
+                                android:paddingStart="@dimen/_4pxh"
+                                android:paddingTop="@dimen/_30pxv"
+                                android:singleLine="true"
+                                android:text="@{profileVM.profileModel.txtGroupSix}"
+                                style="@style/txtOutline" tools:text="@string/msg_delete_my_accou"/>
+                        </FrameLayout>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/btnLogout"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_28pxh"
+                            android:layout_marginStart="@dimen/_28pxh"
+                            android:layout_marginTop="@dimen/_47pxv"
+                            android:layout_width="match_parent"
+                            android:paddingBottom="@dimen/_5pxv"
+                            android:paddingEnd="@dimen/_30pxh"
+                            android:paddingStart="@dimen/_30pxh"
+                            android:paddingTop="@dimen/_5pxv"
+                            android:singleLine="true"
+                            android:text="@string/lbl_logout"
+                            android:textAllCaps="false"
+                            style="@style/btnSolidRounded_8" tools:text="@string/lbl_logout"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

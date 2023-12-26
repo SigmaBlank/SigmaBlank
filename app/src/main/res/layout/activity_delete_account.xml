@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="deleteAccountVM" type="com.blanksapplication.app.modules.deleteaccount.data.viewmodel.DeleteAccountVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnarrowleft"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:gravity="start"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp" style="@style/groupStylewhite_4">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowarrowleft"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_13pxv"
+                android:layout_marginEnd="@dimen/_67pxh"
+                android:layout_marginStart="@dimen/_37pxh"
+                android:layout_marginTop="@dimen/_34pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_height="@dimen/_48pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="@dimen/_25pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowleft_black_900"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_black_900"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDeleteAccount"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_33pxh"
+                    android:layout_weight="0.91"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{deleteAccountVM.deleteAccountModel.txtDeleteAccount}"
+                    style="@style/txtIstokWebbold36_2" tools:text="@string/lbl_delete_account"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_54pxv"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearDELETEACCOUNT"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:gravity="end"
+                    android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_1pxh"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_width="match_parent"
+                    android:text="@{deleteAccountVM.deleteAccountModel.txtDescription}"
+                    style="@style/txtIstokWebregular24_1" tools:text="@string/msg_are_you_sure_wa"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumngiveussomefe"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_65pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_3">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtGiveussomefe"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_138pxv"
+                        android:layout_marginEnd="@dimen/_12pxh"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_15pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{deleteAccountVM.deleteAccountModel.txtGiveussomefe}"
+                        style="@style/txtIstokWebregular24" tools:text="@string/msg_give_us_some_fe"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnConfirmation"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_24pxh"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_marginTop="@dimen/_86pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_5pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_5pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_confirmation"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_8" tools:text="@string/lbl_confirmation"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

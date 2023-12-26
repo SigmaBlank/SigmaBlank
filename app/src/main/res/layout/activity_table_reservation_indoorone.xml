@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="tableReservationIndooroneVM" type="com.blanksapplication.app.modules.tablereservationindoorone.data.viewmodel.TableReservationIndooroneVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnrectanglethirteen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/frameIndoor"
+            android:layout_height="@dimen/_186pxv" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageRectangleThirteen"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_186pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_30pxh}"
+                imageRes="@{@drawable/img_rectangle13_100x350}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle13_100x350"/>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_gravity="top|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_31pxv"
+                android:layout_marginEnd="@dimen/_27pxh"
+                android:layout_marginStart="@dimen/_27pxh"
+                android:layout_marginTop="@dimen/_31pxv"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowarrowleft"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageArrowleft"
+                        android:layout_height="@dimen/_49pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="@dimen/_25pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowleft_white_a700"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_white_a700"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtINDOOR"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_63pxh"
+                        android:layout_marginTop="@dimen/_23pxv"
+                        android:layout_weight="0.6"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{tableReservationIndooroneVM.tableReservationIndooroneModel.txtINDOOR}"
+                        style="@style/txtInriaSansbold36" tools:text="@string/lbl_indoor"/>
+                    <ImageView android:id="@+id/imageSignal"
+                        android:layout_height="@dimen/_55pxh"
+                        android:layout_marginBottom="@dimen/_12pxv"
+                        android:layout_marginStart="@dimen/_82pxh"
+                        android:layout_width="@dimen/_58pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_signal_white_a700"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_signal_white_a700"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </FrameLayout>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnmeal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMeal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_44pxh"
+                    android:layout_marginStart="@dimen/_44pxh"
+                    android:layout_marginTop="@dimen/_25pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{tableReservationIndooroneVM.tableReservationIndooroneModel.txtMeal}"
+                    style="@style/txtIstokWebbold36" tools:text="@string/lbl_meal"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLunch"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_47pxh"
+                    android:layout_marginStart="@dimen/_47pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{tableReservationIndooroneVM.tableReservationIndooroneModel.txtLunch}"
+                    style="@style/txtInriaSansbold20" tools:text="@string/lbl_lunch"/>
+                <FrameLayout
+                    android:id="@+id/frameStackrectangleseventeen"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_244pxv"
+                    android:layout_marginEnd="@dimen/_44pxh"
+                    android:layout_marginStart="@dimen/_44pxh" android:layout_width="@dimen/_341pxh">
+                    <ImageView android:id="@+id/imageRectangleSeventeen"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_244pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_rectangle17_244x341}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle17_244x341"/>
+                    <ImageView android:id="@+id/imageSignalOne"
+                        android:layout_gravity="top|end"
+                        android:layout_height="@dimen/_58pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_width="@dimen/_54pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_signal_white_a700_58x54"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_signal_white_a700_58x54"/>
+                </FrameLayout>
+                <LinearLayout android:gravity="center_vertical"
+                    android:id="@+id/linearBreakfastbutto"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_44pxh"
+                    android:layout_marginStart="@dimen/_44pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylewhite_2">
+                    <ImageView android:id="@+id/imageContrast"
+                        android:layout_height="@dimen/_55pxh"
+                        android:layout_marginBottom="@dimen/_20pxv"
+                        android:layout_marginStart="@dimen/_19pxh"
+                        android:layout_marginTop="@dimen/_12pxv"
+                        android:layout_width="@dimen/_82pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_contrast"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_contrast"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtBreakfast"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_25pxv"
+                        android:layout_marginEnd="@dimen/_43pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_33pxv"
+                        android:layout_weight="0.56"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{tableReservationIndooroneVM.tableReservationIndooroneModel.txtBreakfast}"
+                        style="@style/txtInriaSansbold24_1" tools:text="@string/lbl_breakfast"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical"
+                    android:id="@+id/linearLunchbutton"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_44pxh"
+                    android:layout_marginStart="@dimen/_44pxh"
+                    android:layout_marginTop="@dimen/_28pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylewhite_2">
+                    <ImageView android:id="@+id/imageBrightness"
+                        android:layout_height="@dimen/_55pxh"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginStart="@dimen/_28pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="@dimen/_66pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_brightness"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_brightness"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtLunchOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_25pxv"
+                        android:layout_marginEnd="@dimen/_82pxh"
+                        android:layout_marginStart="@dimen/_29pxh"
+                        android:layout_marginTop="@dimen/_33pxv"
+                        android:layout_weight="0.49"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{tableReservationIndooroneVM.tableReservationIndooroneModel.txtLunchOne}"
+                        style="@style/txtInriaSansbold24_1" tools:text="@string/lbl_lunch"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical"
+                    android:id="@+id/linearDinnerbutton"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_44pxh"
+                    android:layout_marginStart="@dimen/_44pxh"
+                    android:layout_marginTop="@dimen/_27pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylewhite_2">
+                    <ImageView android:id="@+id/imageMobile"
+                        android:layout_height="@dimen/_52pxh"
+                        android:layout_marginBottom="@dimen/_14pxv"
+                        android:layout_marginStart="@dimen/_40pxh"
+                        android:layout_marginTop="@dimen/_22pxv"
+                        android:layout_width="@dimen/_41pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_mobile"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_mobile"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtDinner"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_25pxv"
+                        android:layout_marginEnd="@dimen/_74pxh"
+                        android:layout_marginStart="@dimen/_42pxh"
+                        android:layout_marginTop="@dimen/_33pxv"
+                        android:layout_weight="0.64"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{tableReservationIndooroneVM.tableReservationIndooroneModel.txtDinner}"
+                        style="@style/txtInriaSansbold24_1" tools:text="@string/lbl_dinner"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnContinue"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_58pxv"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_marginEnd="@dimen/_44pxh"
+                    android:layout_marginStart="@dimen/_44pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_width="@dimen/_252pxh"
+                    android:paddingBottom="@dimen/_5pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_5pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_continue"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_7" tools:text="@string/lbl_continue"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

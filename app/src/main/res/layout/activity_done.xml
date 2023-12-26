@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="doneVM" type="com.blanksapplication.app.modules.done.data.viewmodel.DoneVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnvector"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_198pxv"
+        android:layout_marginEnd="@dimen/_34pxh"
+        android:layout_marginStart="@dimen/_37pxh"
+        android:layout_marginTop="@dimen/_148pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearDONE"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:id="@+id/imageVector"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_169pxh"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_width="@dimen/_169pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_vector_light_green_a700"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector_light_green_a700"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDONE"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_41pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{doneVM.doneModel.txtDONE}"
+                    style="@style/txtIstokWebbold36_1" tools:text="@string/lbl_done"/>
+                <TextView android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_31pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{doneVM.doneModel.txtDescription}"
+                    style="@style/txtIstokWebbold24_1" tools:text="@string/msg_your_reservatio4"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtSave"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_1pxh"
+                    android:layout_marginTop="@dimen/_96pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_26pxv"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:singleLine="true"
+                    android:text="@{doneVM.doneModel.txtSave}"
+                    style="@style/txtSolidRounded_3" tools:text="@string/msg_back_to_home_pa"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

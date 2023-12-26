@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="checkEmailPageVM" type="com.blanksapplication.app.modules.checkemailpage.data.viewmodel.CheckEmailPageVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackrectanglefour"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_gravity="start" android:layout_height="0dp"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/frameCHECKEMAILPAG"
+                android:layout_height="match_parent" android:layout_width="match_parent">
+                <ImageView android:id="@+id/imageRectangleFour"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_238pxv"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_rectangle4}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle4"/>
+                <LinearLayout android:id="@+id/linearColumnarrowleft"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowarrowleft"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_29pxh"
+                        android:layout_marginStart="@dimen/_29pxh"
+                        android:layout_marginTop="@dimen/_52pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageArrowleft"
+                            android:layout_height="@dimen/_48pxh"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_width="@dimen/_25pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_arrowleft"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtCheckYourEmai"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_marginStart="@dimen/_36pxh"
+                            android:layout_weight="0.91"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{checkEmailPageVM.checkEmailPageModel.txtCheckYourEmai}"
+                            style="@style/txtIstokWebbold32" tools:text="@string/msg_check_your_emai"/>
+                    </LinearLayout>
+                    <TextView android:gravity="end"
+                        android:id="@+id/txtPleaseenteryo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_24pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{checkEmailPageVM.checkEmailPageModel.txtPleaseenteryo}"
+                        style="@style/txtIstokWebregular20" tools:text="@string/msg_please_enter_yo"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtCode"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_60pxh"
+                        android:layout_marginStart="@dimen/_60pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{checkEmailPageVM.checkEmailPageModel.txtCode}"
+                        style="@style/txtIstokWebbold20" tools:text="@string/lbl_code"/>
+                    <FrameLayout android:id="@+id/frameStackzipcode"
+                        android:layout_gravity="end"
+                        android:layout_height="@dimen/_70pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_364pxh">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtZipcode"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_13pxv"
+                            android:layout_marginEnd="@dimen/_35pxh"
+                            android:layout_marginStart="@dimen/_35pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{checkEmailPageVM.checkEmailPageModel.txtZipcode}"
+                            style="@style/txtIstokWebbold24" tools:text="@string/lbl_321532"/>
+                        <ImageView android:id="@+id/imageVector"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_70pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_vector_blue_100"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_blue_100"/>
+                    </FrameLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNewPassword"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_56pxh"
+                        android:layout_marginStart="@dimen/_56pxh"
+                        android:layout_marginTop="@dimen/_25pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{checkEmailPageVM.checkEmailPageModel.txtNewPassword}"
+                        style="@style/txtIstokWebbold20" tools:text="@string/lbl_new_password"/>
+                    <FrameLayout android:id="@+id/frameStackpassword"
+                        android:layout_gravity="end"
+                        android:layout_height="@dimen/_70pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_364pxh">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPassword"
+                            android:layout_gravity="bottom|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_14pxv"
+                            android:layout_marginEnd="@dimen/_35pxh"
+                            android:layout_marginStart="@dimen/_35pxh"
+                            android:layout_marginTop="@dimen/_14pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{checkEmailPageVM.checkEmailPageModel.txtPassword}"
+                            style="@style/txtIstokWebbold24" tools:text="@string/lbl"/>
+                        <ImageView android:id="@+id/imageVectorOne"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_70pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_vector_blue_100"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_blue_100"/>
+                    </FrameLayout>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtResetPassword"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_32pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_8pxv"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_7pxv"
+                        android:singleLine="true"
+                        android:text="@{checkEmailPageVM.checkEmailPageModel.txtResetPassword}"
+                        style="@style/txtSolidRounded" tools:text="@string/lbl_reset_password"/>
+                </LinearLayout>
+            </FrameLayout>
+        </ScrollView>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="notificationVM" type="com.blanksapplication.app.modules.notification.data.viewmodel.NotificationVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnnotifications"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_42pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle">
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearNOTIFICATION"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_217pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtNotifications"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_32pxh"
+                    android:layout_marginStart="@dimen/_32pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{notificationVM.notificationModel.txtNotifications}"
+                    style="@style/txtIstokWebbold36" tools:text="@string/lbl_notifications"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtNotificationda"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_4pxv"
+                    android:paddingStart="@dimen/_29pxh"
+                    android:paddingTop="@dimen/_11pxv"
+                    android:singleLine="true"
+                    android:text="@{notificationVM.notificationModel.txtNotificationda}"
+                    style="@style/txtSolidOutline_1" tools:text="@string/lbl_recent"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/recyclerListrectanglenine"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_29pxh"
+                    android:layout_marginStart="@dimen/_29pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_1pxh}" tools:itemCount="2" tools:listitem="@layout/row_listrectanglenine"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtNotificationdaOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_4pxv"
+                    android:paddingStart="@dimen/_29pxh"
+                    android:paddingTop="@dimen/_11pxv"
+                    android:singleLine="true"
+                    android:text="@{notificationVM.notificationModel.txtNotificationdaOne}"
+                    style="@style/txtSolidOutline_1" tools:text="@string/lbl_yesterday"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/recyclerListrectanglenineTwo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_29pxh"
+                    android:layout_marginStart="@dimen/_29pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_1pxh}" tools:itemCount="2" tools:listitem="@layout/row_listrectanglenine_two"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <FrameLayout android:id="@+id/frameBottombar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+            <FrameLayout android:id="@+id/frameStackellipseone"
+                android:layout_height="@dimen/_72pxv"
+                android:layout_marginBottom="@dimen/_14pxv"
+                android:layout_marginTop="@dimen/_15pxv" android:layout_width="@dimen/_309pxh">
+                <View
+                    android:background="@drawable/rectangle_bg_blue_900_radius_36"
+                    android:id="@+id/viewEllipseOne"
+                    android:layout_height="@dimen/_72pxh" android:layout_width="@dimen/_69pxh"/>
+                <ImageView android:id="@+id/imageTABBARMENU"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_43pxh"
+                    android:layout_marginBottom="@dimen/_14pxv"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="@dimen/_309pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_tabbarmenu_gray_50"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_tabbarmenu_gray_50"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>
